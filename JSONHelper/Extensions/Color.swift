@@ -51,7 +51,7 @@ import AppKit
 
 extension NSColor: Convertible {
 
-  public static func convertFromValue<T>(value: T?) throws -> Self? {
+  public static func convertFromValue<T>(_ value: T?) throws -> Self? {
     guard let value = value else { return nil }
 
     if let stringValue = value as? String {
@@ -59,7 +59,7 @@ extension NSColor: Convertible {
       return self.init(red: rgba.red, green: rgba.green, blue: rgba.blue, alpha: rgba.alpha)
     }
 
-    throw ConversionError.UnsupportedType
+    throw ConversionError.unsupportedType
   }
 }
 
