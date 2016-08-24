@@ -13,7 +13,7 @@ public protocol Deserializable {
 
 // MARK: - Helper Methods
 
-private func dataStringToObject(_ dataString: String) -> AnyObject? {
+private func dataStringToObject(_ dataString: String) -> Any? {
   guard let data: Data = dataString.data(using: String.Encoding.utf8) else { return nil }
   var jsonObject: Any?
   do {
