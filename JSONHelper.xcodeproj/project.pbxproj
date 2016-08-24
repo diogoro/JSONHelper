@@ -72,6 +72,10 @@
 		5FDBD5211CC46C2A00EF50C4 /* NSDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FC1A48F1B1D082500EF50C4 /* NSDate.swift */; };
 		5FDBD5221CC46C2A00EF50C4 /* NSURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FC1A4931B1D1D8B00EF50C4 /* NSURL.swift */; };
 		D76C52051ACD46B100B49735 /* JSONHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 5FAD07691A70F2FC00C4D09E /* JSONHelper.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D9A9855D1D6DCE1100D9600E /* URL.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9A9855C1D6DCE1100D9600E /* URL.swift */; };
+		D9A9855E1D6DCE1100D9600E /* URL.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9A9855C1D6DCE1100D9600E /* URL.swift */; };
+		D9A9855F1D6DCE1100D9600E /* URL.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9A9855C1D6DCE1100D9600E /* URL.swift */; };
+		D9A985611D6DCE7C00D9600E /* URLTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9A985601D6DCE7C00D9600E /* URLTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -138,6 +142,8 @@
 		5FC1A4931B1D1D8B00EF50C4 /* NSURL.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NSURL.swift; path = Extensions/NSURL.swift; sourceTree = "<group>"; };
 		5FD3A09F1CA5F5C300EF50C4 /* ArrayTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArrayTests.swift; sourceTree = "<group>"; };
 		D76C520A1ACD46B100B49735 /* JSONHelper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = JSONHelper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D9A9855C1D6DCE1100D9600E /* URL.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = URL.swift; path = Extensions/URL.swift; sourceTree = "<group>"; };
+		D9A985601D6DCE7C00D9600E /* URLTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URLTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -216,6 +222,7 @@
 				5F31FF6B1C533F1600EF50C4 /* ColorTests.swift */,
 				5F31FF551C5339B900EF50C4 /* NSDateTests.swift */,
 				5F31FF571C5339CE00EF50C4 /* NSURLTests.swift */,
+				D9A985601D6DCE7C00D9600E /* URLTests.swift */,
 			);
 			name = "Extension Tests";
 			sourceTree = "<group>";
@@ -348,6 +355,7 @@
 				5F31FF5F1C533E9900EF50C4 /* Color.swift */,
 				5FC1A48F1B1D082500EF50C4 /* NSDate.swift */,
 				5FC1A4931B1D1D8B00EF50C4 /* NSURL.swift */,
+				D9A9855C1D6DCE1100D9600E /* URL.swift */,
 			);
 			name = Extensions;
 			sourceTree = "<group>";
@@ -570,6 +578,7 @@
 				5FDBD51F1CC46C2A00EF50C4 /* String.swift in Sources */,
 				5F31FF661C533EA100EF50C4 /* Conversion.swift in Sources */,
 				5F133DA41C3840CA00EF50C4 /* JSONAPI.swift in Sources */,
+				D9A9855F1D6DCE1100D9600E /* URL.swift in Sources */,
 				5FDBD51B1CC46C2A00EF50C4 /* Int.swift in Sources */,
 				5FDBD5201CC46C2A00EF50C4 /* Color.swift in Sources */,
 				5FDBD51C1CC46C2A00EF50C4 /* Float.swift in Sources */,
@@ -591,6 +600,7 @@
 				5F6A2F4E1CC096DA00EF50C4 /* Serialization.swift in Sources */,
 				5FC1A4891B1D024500EF50C4 /* Int.swift in Sources */,
 				5FC1A48E1B1D057B00EF50C4 /* Bool.swift in Sources */,
+				D9A9855D1D6DCE1100D9600E /* URL.swift in Sources */,
 				5F31FF601C533E9900EF50C4 /* Color.swift in Sources */,
 				5FC1A4871B1CFFB500EF50C4 /* String.swift in Sources */,
 				5F31FF5E1C533AE000EF50C4 /* Deserialization.swift in Sources */,
@@ -614,6 +624,7 @@
 				5F31FF7E1C53499000EF50C4 /* NSDecimalNumberTests.swift in Sources */,
 				5F31FF581C5339CE00EF50C4 /* NSURLTests.swift in Sources */,
 				5FB9D4E01B38007C00EF50C4 /* StringTests.swift in Sources */,
+				D9A985611D6DCE7C00D9600E /* URLTests.swift in Sources */,
 				5FAD07771A70F2FC00C4D09E /* JSONHelperTests.swift in Sources */,
 				5F31FF7C1C53497600EF50C4 /* FloatTests.swift in Sources */,
 				5F8F88231CA5F32E00EF50C4 /* DictionaryTests.swift in Sources */,
@@ -642,6 +653,7 @@
 				5F6A2F4F1CC096DA00EF50C4 /* Serialization.swift in Sources */,
 				5FC1A48C1B1D036700EF50C4 /* Int.swift in Sources */,
 				5F31FF611C533E9900EF50C4 /* Color.swift in Sources */,
+				D9A9855E1D6DCE1100D9600E /* URL.swift in Sources */,
 				5F31FF651C533EA000EF50C4 /* Conversion.swift in Sources */,
 				5FC1A4911B1D082B00EF50C4 /* Bool.swift in Sources */,
 				5F31FF631C533E9D00EF50C4 /* Deserialization.swift in Sources */,
@@ -709,6 +721,7 @@
 				PRODUCT_NAME = JSONHelper;
 				SDKROOT = appletvos;
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = 3;
 				TVOS_DEPLOYMENT_TARGET = 9.0;
 			};
@@ -732,6 +745,7 @@
 				PRODUCT_NAME = JSONHelper;
 				SDKROOT = appletvos;
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = 3;
 				TVOS_DEPLOYMENT_TARGET = 9.0;
 			};
@@ -916,6 +930,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.bsencan.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 2.3;
 			};
 			name = Debug;
 		};
@@ -927,6 +942,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.bsencan.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 2.3;
 			};
 			name = Release;
 		};
@@ -947,6 +963,7 @@
 				PRODUCT_NAME = JSONHelper;
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -967,6 +984,7 @@
 				PRODUCT_NAME = JSONHelper;
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
