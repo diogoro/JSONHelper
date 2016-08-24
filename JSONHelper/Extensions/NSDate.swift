@@ -4,22 +4,22 @@
 
 import Foundation
 
-extension NSDate: Convertible {
-  private static let sharedFormatter = NSDateFormatter()
+extension Date: Convertible {
+  fileprivate static let sharedFormatter = DateFormatter()
 
-  public static func convertFromValue<T>(value: T?) throws -> Self? {
+  public static func convertFromValue<T>(_ value: T?) throws -> Date? {
     guard let value = value else { return nil }
 
     if let unixTimestamp = value as? Int {
-      return self.init(timeIntervalSince1970: NSTimeInterval(unixTimestamp))
+      return self.init(timeIntervalSince1970: TimeInterval(unixTimestamp))
     } else if let dateString = value as? String {
-      if let convertedDate = JSONHelper.dateFormatter.dateFromString(dateString) {
+      if let convertedDate = JSONHelper.dateFormatter.date(from: dateString) {
         return self.init(timeIntervalSince1970: convertedDate.timeIntervalSince1970)
       } else {
-        throw ConversionError.InvalidValue
+        throw ConversionError.invalidValue
       }
     }
 
-    throw ConversionError.UnsupportedType
+    throw ConversionError.unsupportedType
   }
 }

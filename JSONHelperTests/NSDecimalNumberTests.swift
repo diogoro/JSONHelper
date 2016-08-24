@@ -10,14 +10,14 @@ class NSDecimalNumberTests: XCTestCase {
   let testInt = 1
   let testFloat = Float(1.2)
   let testDouble = Double(1.2)
-  let testNSNumber = NSNumber(double: 1.2)
-  let testNSDecimalNumber = NSDecimalNumber(double: 1.2)
+  let testNSNumber = NSNumber(value: 1.2)
+  let testNSDecimalNumber = NSDecimalNumber(value: 1.2)
   let testString = "1.2"
 
-  var value = NSDecimalNumber(integer: 0)
+  var value = NSDecimalNumber(value: 0)
 
   override func setUp() {
-    value = NSDecimalNumber(integer: 0)
+    value = NSDecimalNumber(value: 0)
   }
 
   func testIntConversion() {
