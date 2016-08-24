@@ -15,7 +15,7 @@ class NSURLTests: XCTestCase {
   let urlHost = "facebook.com"
 
   func testStringConversion() {
-    var url = URL()
+    var url = NSURL() //URL()
     url <-- (urlString as Any)
     XCTAssertEqual(url.host, urlHost)
   }

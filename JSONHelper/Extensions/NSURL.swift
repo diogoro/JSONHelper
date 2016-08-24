@@ -4,13 +4,13 @@
 
 import Foundation
 
-extension URL: Convertible {
+extension NSURL: Convertible {
 
-  public static func convertFromValue<T>(_ value: T?) throws -> URL? {
+  public static func convertFromValue<T>(_ value: T?) throws -> Self? {
     guard let value = value else { return nil }
 
-    if let urlValue = value as? URL {
-      return self.init(string: urlValue.absoluteString)
+    if let urlValue = value as? NSURL {
+      return self.init(string: urlValue.absoluteString!)
     } else if let stringValue = value as? String {
       return self.init(string: stringValue)
     }
