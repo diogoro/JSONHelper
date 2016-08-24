@@ -34,7 +34,7 @@ class StringTests: XCTestCase {
 
   func testDateConversion() {
     JSONHelper.dateFormatter.dateFormat = testDateFormat
-    JSONHelper.dateFormatter.timeZone = NSTimeZone(secondsFromGMT: 0)
+    JSONHelper.dateFormatter.timeZone = TimeZone(secondsFromGMT: 0)
 
     value <-- (testDateAndResult.0 as Any)
     XCTAssertEqual(value, testDateAndResult.1)

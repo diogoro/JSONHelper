@@ -13,7 +13,7 @@ class NSDateTests: XCTestCase {
 
   override func setUp() {
     JSONHelper.dateFormatter.dateFormat = dateStringFormat
-    JSONHelper.dateFormatter.timeZone = NSTimeZone(secondsFromGMT: 0)
+    JSONHelper.dateFormatter.timeZone = TimeZone(secondsFromGMT: 0)
   }
 
   func testEpochTimestampConversion() {
